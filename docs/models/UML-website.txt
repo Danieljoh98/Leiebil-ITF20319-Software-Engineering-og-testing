@@ -1,0 +1,11 @@
+@startuml
+title Sequence diagram of website access
+User -> "Browser" as b: Opens browser on a PC
+
+b -> Website: Enters website URL
+Website -> Database: Requests fresh information
+Database -> Website: Returns newest data
+Website -> b: Returns website information
+b -> b: Loads website information
+b -> User: Displays website to the user's PC
+@enduml

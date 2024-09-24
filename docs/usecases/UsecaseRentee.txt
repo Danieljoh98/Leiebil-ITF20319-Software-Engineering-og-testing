@@ -1,0 +1,24 @@
+@startuml
+skinparam actorStyle awesome
+title __Use case:__\nRentee
+
+'--------------Actors---------------
+actor Rentee as r
+
+'--------------Usecases---------------
+Usecase cp as "Create profile"
+Usecase fv as "Find vehicles"
+Usecase rv as "Rent vehicles"
+Usecase cr as "Contact renter"
+Usecase gf as "Give feedback"
+
+'--------------Lines---------------
+r --> cp
+r --> fv
+r --> rv
+r --> cr
+r --> gf
+
+'--------------Footer---------------
+center footer ""
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+:User's smartphone]
+:Takes picture;
+:Picture stored in phone]
+:Upload picture to website;
+:Picture stored on server]
+:Encode and compress;
+:Stored and available to the system]
+:Update link to location in database;
+:Connected to advert and viewable by users]
+@enduml
+Dataflow diagram which shows how a picture can be stored and used in an advert. The model was created by Marius Christian Aastebøl.
+
+Being able to upload pictures gives great value to both renters and rentees. Without pictures it's difficult to tell the state of a vehicle. Most users will therefore upload images from their own devices. This can be done as the model shows. After taking and uploading the image, it will be stored and encoded. This means it will be "translated" into a preferred format (png., jpg. etc.) and be reduced in size. Finally, the database will be updated with a link to the location of the image (like an URL) and the image will be viewable by users.

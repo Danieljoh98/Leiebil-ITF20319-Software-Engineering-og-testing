@@ -1,0 +1,22 @@
+@startuml
+
+title State diagram for booking a car
+hide empty description
+[*] --> Find_car
+Find_car -->Booking : Select car
+Booking : Looking to book 
+Booking -left-> Calender : is available
+Calender: Calendercheck
+Confirmation : Confirmed
+Confirmation --> Confirmation : Are you sure ?
+Confirmation -up[#red,dashed]-> Calender : Declined ?
+Calender --> Confirmation : Is available \n at date
+Confirmation --> Payment: Select payment option
+Confirmation -[#red,dashed]-> Booking: Already reserved
+Confirmation -[#red,dashed]-> Find_car : Car does not exist anymore
+Calender -up[#red,dashed]--> Booking : Not available
+Payment -up[#red,dashed]-> Confirmation : Transaction incomplete
+Payment -right-> Notification_service
+Payment--> [*] : Send user transaction complete and database is updated.
+
+@enduml

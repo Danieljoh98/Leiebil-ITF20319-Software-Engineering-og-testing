@@ -1,0 +1,17 @@
+@startuml message flow diagram
+:User's devices]
+:write messages;
+:sent messages]
+:deliverd messages]
+:Available message to read]
+:Encode messages;
+:Display message]
+:View messages]
+:stores messages;
+:reply messages]
+message;
+if (case1){delete message}
+else if (case2){edit message}
+else {exit}
+Clearpage;
+@enduml

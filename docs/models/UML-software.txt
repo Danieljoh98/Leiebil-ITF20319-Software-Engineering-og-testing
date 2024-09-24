@@ -1,0 +1,11 @@
+@startuml
+title Sequence diagram of software access
+User -> Application: Installs software on PC
+
+Application -> Webserver: Requests information
+Webserver -> Database: Requests fresh information
+Database -> Webserver: Returns newest data
+Webserver -> Application: Returns data
+Application -> Application: Loads information
+Application -> User: Displays information the user's PC
+@enduml

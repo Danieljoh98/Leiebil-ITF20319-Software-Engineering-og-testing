@@ -13,7 +13,7 @@ Open the folder in a text editor that has a built-in terminal, e.g. Visual Studi
 
 -   `npm ci` to install all required dependencies. If any warnings about deprecated dependencies show, these can be safely ignored.
 -   `npm run setup` to automatically setup the database and insert mock data.
--   `npm start` to start the application. Open a web browser and go to http://localhost:3000 to view the web application.
+-   `npm start` to start the application. Open a web browser and go to http://localhost:3001 to view the web application.
 
 ## Running tests
 
